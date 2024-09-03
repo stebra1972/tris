@@ -1,0 +1,40 @@
+<!-- index.html -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+</head>
+<body>
+    <h1>My Library</h1>
+    <table id="libraryTable" border="1">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Pages</th>
+                <th>Read</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Book rows will be inserted here -->
+        </tbody>
+    </table>
+    <button id="newBookButton">New Book</button>
+    <button id="onlyTableButton">Only Table</button>
+
+    <!-- Form to add new book -->
+    <div id="newBookForm" style="display: none;">
+        <input type="text" id="title" placeholder="Title">
+        <input type="text" id="author" placeholder="Author">
+        <input type="number" id="pages" placeholder="Pages">
+        <input type="text" id="read" placeholder="Read (yes/no)">
+        <button onclick="addBookToLibrary()">Add Book</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
